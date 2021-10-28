@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Zetta&display=swap');
+
+
+:root{
+    /* Colors */
+
+   /* ### Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+   /* Neutral */
+
+    --Transparent-white: hsl(0, 0%, 100%, 0.75);
+    --Very-light-gray : hsl(0, 0%, 95%);
+    
+}
+*/{
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--Transparent-white);
+    background-color: var(--Very-light-gray);
+}
+
+.container{
+    width: 350px;
+}
+
+.tittle{
+    font-family: "Big shoulders Display", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.description{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 550;
+    padding: 10px 0 40px 0;
+} 
+
+.btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border:solid 3px;
+}
+.btn{
+    border: none;
+    border-radius: 100px;
+    padding: 15px 30px;
+    background-color: var(--Very-light-gray);
+    cursor: pointer;
+    font-size: 16px ;
+    font-weight: 600;
+}
+.about__sedans{
+    color: var(--Bright-orange);
+}
+.about__suvs{
+    color: var(--Very-dark-cyan);
+}
+
+.about__luxury{
+    color: var(--Very-dark-cyan);
+}
+
+.card__component__sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px  0 0;
+    padding: 50px;
+
+}
+
+.card__component__suvs{
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+}
+
+.card__component__luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+    padding: 50px;
+}
+
+@media (min-width:790px){
+    .container{
+        display:flex;
+        width: 900px;
+        height: 450px;
+        margin: 100px auto 0;
+    }
+    .card__component__sedans{
+        border-radius: 10px 0 0 10px ;
+    }
+    .card__component__luxury{
+        border-radius: 0 10px 10px 0 ;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--Bright-orange); margin:20px }
+    .attribution a { color: var(--Very-dark-cyan)}
